@@ -5,29 +5,31 @@
 
 belltones = {
     'warn' : 'warn.wav',
-    'start' : 'nextperiod.wav',
-    'end' : ''
+    'start' : 'sqbell.wav',
+    'back' : 's1bell.wav'
 }
 
 bellschedule = {   
-    '08:48' : 'warn',
-    '08:50' : 'start',   
-    '09:38' : 'warn',
+    '08:49' : 'warn',
+    '08:50' : 'back',   
+    '09:39' : 'warn',
     '09:40' : 'start',
-    '10:28' : 'warn',
+    '10:29' : 'warn',
     '10:30' : 'start',
-    '11:33' : 'warn',
+    '10:44' : 'warn',
+    '10:45' : 'back',    
+    '11:34' : 'warn',
     '11:35' : 'start',
-    '12:23' : 'warn',
+    '12:24' : 'warn',
     '12:25' : 'start',
-    '13:13' : 'warn',
+    '13:14' : 'warn',
     '13:15' : 'start',
-    '14:08' : 'warn',
-    '14:10' : 'start',
-    '14:58' : 'warn',
+    '14:09' : 'warn',
+    '14:10' : 'back',
+    '14:59' : 'warn',
     '15:00' : 'start',
-    '15:48' : 'warn',
-    '16:11' : 'start',
+    '15:49' : 'warn',
+    '15:50' : 'start',
 }
 
 holidays = {
@@ -93,4 +95,3 @@ if filename:
     # Sleep 10 seconds to allow sounds to play
     # Note - No sound played without sleep command!
     sleep(10)
-    
