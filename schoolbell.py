@@ -94,4 +94,4 @@ if filename:
     mixer.music.play()
     # Sleep 10 seconds to allow sounds to play
     # Note - No sound played without sleep command!
-    sleep(10)
+    sleep(20)
