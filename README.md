@@ -1,6 +1,6 @@
 Simple python script to play sounds over the school day
 
-Credit for sound clips
+Credit for sound clips:
 
 nextperiod.wav <br />
 https://freesound.org/people/Jackalgirl/sounds/683750/ <br />
