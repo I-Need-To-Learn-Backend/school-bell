@@ -37,9 +37,7 @@ holidays = {
     '2020-09-25',
 }
 
-import os
-import datetime
-import sys
+from datetime import datetime
 from time import sleep
 from pygame import mixer
 
@@ -48,50 +46,44 @@ mixer.pre_init(buffer=2048)
 # Initialise mixer
 mixer.init()
 
-# find filepath where script is running to assure bell files are here
-path, runfile = os.path.split(os.path.abspath(sys.argv[0]))
+filename = None
 
-try:
-    try:  # check if a time is being passed and parse it
-        force_dt = datetime.datetime.strptime(sys.argv[1],'%H:%M')
-        filename = None
-    except:  # for testing: if you pass a filename, the code will chime it
-        force_dt = None
-        filename = sys.argv[1]
-except:
-    filename = None
+dt = datetime.now()
 
-if force_dt:
-    dt = force_dt
-else:
-    dt = datetime.datetime.now()
-
+# Store time
 timestr = dt.strftime('%H:%M')
+# Store date
 datestr = dt.strftime('%Y-%m-%d')
 
+# Check if Mon - Fri and not in holidays
 if dt.weekday() < 5 and datestr not in holidays:  
+    
     # it is a weekday not a holiday, do chimes
     print('It is a schoolday, checking time '+timestr)
 
     if timestr in bellschedule:
+        
+        # Change filename using belltones dictionary
         filename = belltones[bellschedule[timestr]]
+        
+        # Print name of file
         print(filename)
 
 else:
+    
+    # print holiday message
     print('It is a weekend or holiday -- enjoy!')
 
 if filename:
     
-# Commented out as seems to be a bug with mpg321
-#     filepath = os.path.join(path,filename)
-#     command = 'mpg321 -a hw:1,0 '+filepath
-#     os.system(command)
+    # Print ring bell
     print("Ring bell")
     
     # Load in sound
     mixer.music.load(filename)
     # Play sound
     mixer.music.play()
-    # Sleep 10 seconds to allow sounds to play
+    
+    # Sleep 20 seconds to allow sounds to play
     # Note - No sound played without sleep command!
     sleep(20)
