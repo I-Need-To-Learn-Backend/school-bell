@@ -4,11 +4,11 @@ May need to do following step to set correct default system soundcard.
 
 Find your desired card with:
 
-cat /proc/asound/cards
-and then create /etc/asound.conf with following:
-defaults.pcm.card 1
-defaults.ctl.card 1
-Replace "1" with the number of your card determined above.
+cat /proc/asound/cards <br />
+and then create /etc/asound.conf with following: <br />
+defaults.pcm.card 1 <br />
+defaults.ctl.card 1 <br />
+Replace "1" with the number of your card determined above. <br />
 
 Credit for sound clips:
 
