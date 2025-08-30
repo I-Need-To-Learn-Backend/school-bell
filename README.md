@@ -3,6 +3,8 @@
 
 May need to do following step to set correct default system soundcard.
 
+### Setup soundcard \
+
 Find your desired card with:
 > #### cat /proc/asound/cards <br />
 
@@ -11,7 +13,7 @@ and then create /etc/asound.conf with following: <br />
 > #### defaults.ctl.card 1 <br />
 Replace "1" with the number of your card determined above. <br />
 
-Setup crontab
+### Setup crontab \
 
 Open crontab <br />
 > #### crontab -e  <br />
