@@ -10,6 +10,15 @@ defaults.pcm.card 1 <br />
 defaults.ctl.card 1 <br />
 Replace "1" with the number of your card determined above. <br />
 
+Setup crontab
+
+Open crontab <br />
+crontab -e  <br />
+
+Add this line at the bottom (make sure there is a space between the * symbols) to run the program every minute  <br />
+* * * * * ./home/pi/schoolbell.py  <br />
+
+
 Credit for sound clips:
 
 nextperiod.wav <br />
