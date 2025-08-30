@@ -4,19 +4,18 @@ May need to do following step to set correct default system soundcard.
 
 Find your desired card with:
 
-cat /proc/asound/cards <br />
+> cat /proc/asound/cards <br />
 and then create /etc/asound.conf with following: <br />
-defaults.pcm.card 1 <br />
-defaults.ctl.card 1 <br />
+> defaults.pcm.card 1 <br />
+> defaults.ctl.card 1 <br />
 Replace "1" with the number of your card determined above. <br />
 
 Setup crontab
 
 Open crontab <br />
-crontab -e  <br />
-
+> crontab -e  <br />
 Add this line at the bottom (make sure there is a space between the * symbols) to run the program every minute  <br />
-> * * * * * ./home/pi/schoolbell.py  <br />
+> '* * * * * ./home/pi/schoolbell.py'  <br />
 
 
 Credit for sound clips:
