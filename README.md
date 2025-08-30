@@ -1,10 +1,10 @@
-Simple python script to play sounds over the school day
+## Simple python script to play sounds over the school day
+# Credit to https://gist.github.com/BillSimpson/d7a1a531995c8b63492bb47ef8872618
 
 May need to do following step to set correct default system soundcard.
 
 Find your desired card with:
-
-> cat /proc/asound/cards <br />
+> ### cat /proc/asound/cards <br />
 
 and then create /etc/asound.conf with following: <br />
 > ### defaults.pcm.card 1 <br />
@@ -32,3 +32,5 @@ s1bell <br />
 Prince Jazzbo - School <br />
 ambell <br />
 Amadou & Mariam - La réalité <br />
+
+
