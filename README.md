@@ -1,5 +1,5 @@
-## Simple python script to play sounds over the school day
-# Credit to https://gist.github.com/BillSimpson/d7a1a531995c8b63492bb47ef8872618
+#### Simple python script to play sounds over the school day
+### Credit to https://gist.github.com/BillSimpson/d7a1a531995c8b63492bb47ef8872618
 
 May need to do following step to set correct default system soundcard.
 
