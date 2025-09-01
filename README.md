@@ -14,7 +14,7 @@ and then create /etc/asound.conf with following to set defaults. Replace "1" wit
 Open crontab <br />
 > #### crontab -e  <br />
 Add this line at the bottom (make sure there is a space between the * symbols) to run the program every minute  <br />
-> #### * * * * * ./home/pi/schoolbell.py  <br />
+> #### * * * * * /home/pi/schoolbell.py  <br />
 
 
 ## Credit for sound clips:
