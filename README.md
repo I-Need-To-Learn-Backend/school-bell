@@ -20,6 +20,9 @@ Add this line at the bottom (make sure there is a space between the * symbols) t
 ## Credit for sound clips:
 nextperiod.wav - https://freesound.org/people/Jackalgirl/sounds/683750/ <br />
 warn.wav - https://freesound.org/people/Benboncan/sounds/93646/ <br />
+quickchime.wav - https://freesound.org/people/kwahmah_02/sounds/245956/ <br />
+longchime.wav - https://freesound.org/people/mpaol2023/sounds/370182/ <br />
+
 sqbell - Squarepusher - Tommib <br />
 s1bell - Prince Jazzbo - School <br />
 ambell - Amadou & Mariam - La réalité <br />
